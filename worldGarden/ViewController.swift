@@ -104,9 +104,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func playAgainButtonPressed(_ sender: UIButton) {
-        playAgainButton.isHidden = true
-        guessLetterField.isHidden = true
-        guessLetterButton.isEnabled = false
+        playAgainButton.isHidden = false
+        guessLetterField.isHidden = false
+        guessLetterButton.isEnabled = true
         flowerImageView.image = UIImage(named: "flower8")
         wrongGuessesRemaining = maxNumberOfWrongGuesses
         lettersGuessed = ""
